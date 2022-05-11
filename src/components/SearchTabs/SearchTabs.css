@@ -1,0 +1,117 @@
+.search-tabs-ctr {
+    position: relative;
+}
+
+.search-tab {
+    position: absolute;
+    /* top: -50px; */
+    /* Map height is 65vh, so i choose -5vh to place this at the bottom of the map */
+    top: -5vh;
+    width: 100%;
+    border-radius: 3px;
+    -webkit-box-shadow: -1px 3px 4px -2px #dee0e2;
+    box-shadow: -1px 3px 4px -2px #dee0e2;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+
+
+.srch-tab {
+    border-radius: inherit;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.search-form {
+    width: 100%;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.form-group {
+    border-right: 1px solid #e6e6e6;
+    width: 25%;
+
+}
+
+.form-group:last-child {
+    border-right: none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.form-group>input,
+
+.form-group>button {
+    width: 100%;
+
+}
+
+.form-group>.srch-btn {
+    /* display: inline; */
+    /* vertical-align: middle; */
+    height: 70%;
+    text-align: center;
+    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+
+.srch-btn:hover {
+    background-position: right center;
+}
+
+
+.tab-content {
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    color: #939393;
+    text-transform: capitalize;
+}
+
+.nav.nav-tabs>.nav-item {
+    margin: 0;
+
+}
+
+.nav.nav-tabs>.nav-item>.nav-link {
+    background-color: #1e1f21;
+    color: #fff;
+    height: 40px;
+
+
+}
+
+.nav.nav-tabs>.nav-item>.nav-link.active {
+    background-color: rgb(255, 255, 255);
+    color: #000
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .form-group {
+        border-right: none;
+        width: 100%;
+    }
+
+    .form-group>.srch-btn {
+        height: 100%;
+    }
+
+}
