@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { fetchJobs } from '../../actions/jobActions'
 
 import PropTypes from 'prop-types'
+import JobCell from '../JobCell/JobCell';
 class Jobs extends Component {
     componentDidMount() {
         this.props.fetchJobs();
@@ -10,14 +11,13 @@ class Jobs extends Component {
 
     render() {
         const jobPosts = this.props.jobs.map(job => (
-            <div key={job.id}>
-                <h6 className='text-capitalize'> {job.jobtitle} </h6>
-            </div>
+            <JobCell key={job.id} jobtitle={job.jobtitle} />
         ))
         return (
-            <div>Jobs
+            <div className='jobs container bg-success'>
+                Jobs
+                {/* {jobPosts} */}
 
-                {jobPosts}
             </div>
         )
     }

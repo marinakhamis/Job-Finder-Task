@@ -3,19 +3,19 @@
 }
 
 .search-tab {
-    position: absolute;
+    /* position: absolute; */
     /* top: -50px; */
     /* Map height is 65vh, so i choose -5vh to place this at the bottom of the map */
-    top: -5vh;
+    /* top: -5vh; */
     width: 100%;
     border-radius: 3px;
     -webkit-box-shadow: -1px 3px 4px -2px #dee0e2;
     box-shadow: -1px 3px 4px -2px #dee0e2;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
+    /* right: 0; */
+    /* left: 0; */
     transition: 0.5s;
+    /* height of find tab */
+    margin: -40px auto 40px;
 }
 
 
