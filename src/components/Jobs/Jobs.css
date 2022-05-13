@@ -1,0 +1,34 @@
+/* 
+.react-tabs__tab--selected {
+    background-color: rgb(9, 6, 0) !important;
+} */
+.jobs-tabs-ctr {
+    padding-right: 20px;
+    background-color: #f7f7f9;
+
+}
+
+.jobs-tabs-ctr>.react-tabs__tab-list {
+    background-color: #f7f7f9;
+    border-radius: 1px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #616161;
+    padding-top: 10px !important;
+    border-bottom: 2px solid #f7f7f9;
+
+}
+
+.react-tabs__tab-list>.react-tabs__tab {
+    border-radius: 1px;
+    padding: 10px;
+
+}
+
+
+
+.react-tabs__tab-list>.react-tabs__tab--selected {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #e3e3e3;
+    border-bottom: none;
+}

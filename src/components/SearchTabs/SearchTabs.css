@@ -60,13 +60,12 @@
     /* vertical-align: middle; */
     height: 70%;
     text-align: center;
-    background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
-    transition: 0.5s;
-    background-size: 200% auto;
+    background: #232526;
 }
 
 .srch-btn:hover {
     background-position: right center;
+    background: #4f52d3;
 }
 
 

@@ -1,0 +1,9 @@
+.job-info-ctr {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
+    gap: 10px;
+    font-size: 0.9rem;
+    
+}
+
+.job-info {}

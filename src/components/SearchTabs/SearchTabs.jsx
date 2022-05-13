@@ -14,7 +14,7 @@ function SearchTabs() {
                     variant='tabs'
                     transition={false}
                 >
-                    <Tab eventKey="job" title="FIND A JOB" className='srch-tab p-3'>
+                    <Tab eventKey="job" title="FIND A JOB" className='srch-tab px-3'>
 
                         {/* Find A job search form */}
                         <Form className='search-form'>
