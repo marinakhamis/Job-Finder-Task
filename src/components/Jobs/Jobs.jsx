@@ -52,15 +52,15 @@ class Jobs extends Component {
         ))
 
         return (
-            <div className='jobs container'>
-                <div className='row mb-5'>
-                    <div className='col-lg-8 p-3'>
+            <div className='jobs-ctr container'>
+                <div className='jobs'>
+                    <div className='ptn-jobs'>
                         <div className='d-flex justify-content-between'>
                             <p className='fw-bold'> We have <span className='purple-text fw-bold'> {this.props.jobs.length} </span> Potential Jobs for you.</p>
                             <p>Sort by <span className='purple-text'>price</span> </p>
                         </div>
                         <Tabs>
-                            <div className='jobs-tabs-ctr container'>
+                            <div className='jobs-tabs-ctr ps-3'>
                                 <TabList>
                                     <Tab>ALL JOBS</Tab>
                                     <Tab>FULL TIME</Tab>
@@ -78,7 +78,7 @@ class Jobs extends Component {
                                     }
                                 </div>
                             </TabPanel>
-                            
+
 
                             <TabPanel>
                                 <p>No Available Jobs now </p>
@@ -104,9 +104,8 @@ class Jobs extends Component {
                         </Tabs>
 
 
-
                     </div>
-                    <div className='col-lg-4 p-3'>
+                    <div className='srch-jobs'>
                         <SearchTogglers />
                     </div>
                 </div>
