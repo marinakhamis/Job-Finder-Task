@@ -20,62 +20,13 @@ class Candidates extends Component {
 
             <SwiperSlide key={candidate.id}>
                 <img alt={candidate.name} src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg" />
-
-                {/* Candidates API is broken */}
-                <img alt={candidate.name} src={candidate.avatar} />
-
+                {/* Candidates API is broken (All avatar links are broken) */}
+                {/* <img alt={candidate.name} src={candidate.avatar} /> */}
             </SwiperSlide>
         ))
         return (
 
-            // <div className="candidates-ctr p-3">
-            //     <div className="candidates-header">
-            //         <p className="text-uppercase">
-            //             Find top talents
-            //         </p>
-            //         <h1 className="candidates-title text-light text-capitalize">
-            //             Explore Our Latest Candidates
-            //         </h1>
-            //         <hr style={{
-            //             width: "40px",
-            //             textAlign: "center",
-            //             margin: "auto",
-            //             height: "2.5px",
-            //             color: "#000",
-            //             borderRadius: "5px",
-            //             opacity: 1
-            //         }}></hr>
-            //         <p className="candidates-desc">
-            //             Work wityh someone perfect for your team & get
-            //             amazing results working with the best employees .
-            //             hire talents with confidence
-            //         </p>
-            //     </div>
-            //     <div className='candidates'>
-            //         <div className="candidates-carousel container">
-            //             <Swiper
-            //                 spaceBetween={50}
-            //                 slidesPerView={3}
-            //                 modules={[Navigation]}
-            //                 navigation={true}
-            //             >
-            //                 {/* <SwiperSlide>Slide 1</SwiperSlide>
-            //             <SwiperSlide>Slide 1</SwiperSlide>
-            //             <SwiperSlide>Slide 1</SwiperSlide>
-            //             <SwiperSlide>Slide 1</SwiperSlide> */}
-
-            //                 {candidatePosts}
-            //             </Swiper>
-
-            //         </div>
-            //     </div>
-            //     <div className="explore-all">
-            //         <button className='btn btn-primary'>explore all</button>
-            //     </div>
-            // </div>
-
-
-            <div className="Candidates">
+            <div className="candidates">
                 <div className="candidates-header">
                     <span className="candidates-find">
                         find top talents

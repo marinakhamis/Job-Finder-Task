@@ -62,7 +62,7 @@ const Info = () => {
             <div className='open-positions'>
                 {infoData.map(info => (
                     <>
-                        <div className='info d-flex flex-row border p-3 m-0'>
+                        <div key={info.id} className='info d-flex flex-row border p-3 m-0'>
                             <div className="icon">
                                 <i className={info.icon}></i>
                             </div>
@@ -124,9 +124,10 @@ const Info = () => {
 
                             <div className='p-2'>
                                 <div className='p-3 pb-0 m-0'>
-                                    <p className='m-0'>
-                                        <span className='bg-primary px-2'>  @tielabs</span>                                     </p>
-                                    <p className='m-0'>
+                                    <p className='mx-1'>
+                                        <span className='bg-primary px-2'>  @tielabs</span>
+                                    </p>
+                                    <p className='mx-1'>
                                         We have released a major update for instaNOW plugin (formaly instagramy)
                                         v2.0 http/www.insta-now
                                     </p>

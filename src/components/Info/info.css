@@ -135,8 +135,8 @@
     width: 400px !important;
 }
 
-.swiper>div.swiper-button-next,
-.swiper>div.swiper-button-prev {
+.feat-jobs-slider .swiper>div.swiper-button-next,
+.feat-jobs-slider .swiper>div.swiper-button-prev {
     background-color: #f1f2f4;
     color: rgb(169, 169, 169);
     position: absolute;
