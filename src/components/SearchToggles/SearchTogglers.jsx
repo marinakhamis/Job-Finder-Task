@@ -37,7 +37,7 @@ const SearchTogglers = () => {
                         <Accordion.Item eventKey="2">
                             <Accordion.Header>Specialisms</Accordion.Header>
                             <Accordion.Body>
-                                <Form.Group  >
+                                <Form.Group className='p-4' >
                                     <Form.Label>SPECIALISM</Form.Label>
                                     <Form.Control className='bg-light' type="text" placeholder="SPECIALISM, Keywords" />
                                 </Form.Group>

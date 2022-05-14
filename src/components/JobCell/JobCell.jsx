@@ -2,7 +2,6 @@ import React from 'react'
 import companyLogo from '../../assets/building.webp'
 import './JobCell.css'
 const JobCell = (props) => {
-    // console.log(props)
     return (
         <div className='job-cell  border border-top-0 p-3'>
             <div className='job-info-ctr'>

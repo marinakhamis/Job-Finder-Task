@@ -1,6 +1,231 @@
-.candidates {
+/* .candidates-ctr {
     background-color: #4f52d3;
     color: #fff;
     text-align: center;
+    height: 50vh;
+    position: relative;
 
+}
+
+.candidates-header {
+    height: 40%;
+}
+
+.candidates {
+    position: absolute;
+    height: 500px;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(50%);
+
+}
+ */
+
+
+.Candidates {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.candidates-header {
+    position: relative;
+    background-color: #4f52d3;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.candidates-find,
+.candidates-title,
+.candidates-desc {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.candidates-find {
+    text-transform: uppercase;
+}
+
+.candidates-title {
+    color: #fff;
+}
+
+.hr {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.candidates-desc {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+}
+
+/* candidates-carousel */
+.candidates-carousel {
+    position: relative;
+    top: -140px;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: none !important;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slide-content img {
+    width: 100%;
+    height: 180px;
+}
+
+.slide-content h1 {
+    width: 95%;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.slide-content span {
+    text-align: center;
+    font-size: 12px;
+    color: #8b8b8b;
+}
+
+.candidates-carousel .swiper-button-next,
+.candidates-carousel .swiper-button-prev {
+    position: absolute;
+    z-index: 1000;
+    top: 38%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #4f52d3;
+    border-radius: 50%;
+}
+
+.candidates-carousel .swiper-button-next:after,
+.candidates-carousel .swiper-button-prev:after {
+    font-size: 16px !important;
+    font-weight: 900;
+    color: #fff;
+}
+
+.candidates-carousel .swiper-button-next {
+    right: 0px;
+}
+
+.candidates-carousel .swiper-button-prev {
+    left: 0px;
+}
+
+.explore-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -100px;
+    margin-bottom: 30px;
+}
+
+.explore-all a {
+    background-color: black;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: all .4s ease-in-out;
+}
+
+.explore-all a:hover {
+    color: black;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .candidates-carousel {
+        height: 320px;
+    }
+
+    .candidates-title {
+        text-align: center;
+    }
+
+    .candidates-desc {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .slide-content h1 {
+        font-size: 16px;
+    }
+
+    .candidates-carousel {
+        position: relative;
+        top: -167px;
+    }
+
+    .candidates-carousel .swiper-container {
+        height: 340px;
+    }
+
+    .slide-content img {
+        height: 210px;
+    }
+
+    .slide-content h1 {
+        margin: 5px 0px !important;
+    }
+
+    .candidates-carousel .swiper-button-next,
+    .candidates-carousel .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        margin-top: 10px;
+        display: block;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 5px;
+    }
 }

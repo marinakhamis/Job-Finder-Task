@@ -49,7 +49,6 @@
 }
 
 .form-group>input,
-
 .form-group>button {
     width: 100%;
 
@@ -90,8 +89,10 @@
     background-color: #1e1f21;
     color: #fff;
     height: 40px;
+}
 
-
+.nav.nav-tabs>.nav-item>.nav-link:hover {
+    background-color: #4f52d3;
 }
 
 .nav.nav-tabs>.nav-item>.nav-link.active {

@@ -47,7 +47,7 @@ function SearchTabs() {
                             </Form.Group>
                         </Form>
                     </Tab>
-                    <Tab eventKey="resume" title="FIND Resume" className='srch-tab p-3'>
+                    <Tab eventKey="resume" title="FIND Resume" className='srch-tab px-3'>
                         {/* Find A Resume search form */}
                         <Form className='search-form'>
                             <Form.Group className="p-3 form-group" >

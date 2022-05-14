@@ -1,5 +1,6 @@
 import React from 'react'
 import './info.css'
+import { Form, Button } from 'react-bootstrap'
 const Info = () => {
     const infoData = [
         {
@@ -70,12 +71,74 @@ const Info = () => {
                 </div>
             </div>
 
-            <div className='row p-3 contact-us'>
-                <div className='col-lg-4 bg-primary p-4'>
-                    hhh
+            <div className='row contact-us p-3'>
+                <div className='col-lg-4 bg-primary text-light subscribe-ctr'>
+
+                    <Form>
+                        <Form.Group className="mb-3">
+                            <div className='d-flex border-bottom'>
+                                <span className='border-end p-3'>
+                                    <i className="fa-solid fa-paper-plane p-2"></i>
+                                </span>
+                                <span className='p-3 text-light'> Subscribe Our News </span>
+                            </div>
+
+                            <div className='p-2'>
+                                <div className='p-3 pb-0 m-0'>
+                                    <p className='m-0'>
+                                        Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
+                                    </p>
+                                </div>
+                                <div className="email-input p-3">
+                                    <i className="fa-solid fa-envelope email-icon "></i>
+                                    <input type="email" placeholder="Enter Your Email" className='input-field' />
+                                </div>
+                            </div>
+
+                        </Form.Group>
+                        <Form.Group className="p-4 form-group w-100 ">
+                            <Button className='btn btn-primary subs-btn' variant="primary" type="submit">
+                                Subscribe
+                            </Button>
+                        </Form.Group>
+                    </Form>
+
+
+
                 </div>
-                <div className='col-lg-4 bg-info p-4'>
-                    hhh
+
+
+                <div className='col-lg-4 bg-primary text-light subscribe-ctr'>
+
+                    <Form>
+                        <Form.Group className="mb-3">
+                            <div className='d-flex border-bottom'>
+                                <span className='border-end p-3'>
+                                    <i className="fa-solid fa-paper-plane p-2"></i>
+                                </span>
+                                <span className='p-3 text-light'> Subscribe Our News </span>
+                            </div>
+
+                            <div className='p-2'>
+                                <div className='p-3 pb-0 m-0'>
+                                    <p className='m-0'>
+                                        Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
+                                    </p>
+                                </div>
+                                <div className="email-input p-3">
+                                    <i className="fa-solid fa-envelope email-icon "></i>
+                                    <input type="email" placeholder="Enter Your Email" className='input-field' />
+                                </div>
+                            </div>
+
+                        </Form.Group>
+                        <Form.Group className="p-4 form-group w-100 ">
+                            <p> 8 hours ago</p>
+                        </Form.Group>
+                    </Form>
+
+
+
                 </div>
 
             </div>
