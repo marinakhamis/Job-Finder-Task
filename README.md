@@ -19,3 +19,6 @@ That's coming from googleMapsAPI because you're probably using AdBlock extension
     Time coming from API: "2022-04-09T00:03:49.583Z":
     Converted to: 35 days ago
     ```
+  - P.S: I didn't highlight job types because each job has a different type, so i couldn't give each type a highlight color 
+  - Candidates API are missing the avatar but I added a fallback picture
+  - If there are any edits required or a possibility to extend the deadline, I'm sure I'll do my best
