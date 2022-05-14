@@ -13,4 +13,6 @@ root.render(
 );
 
 
-document.getElementsByTagName('html')[0].setAttribute("dir", "rtl");
+// BONUS: Supporting RTL
+// just change "ltr" to "rtl" and it'll work
+document.getElementsByTagName('html')[0].setAttribute("dir", "ltr");
