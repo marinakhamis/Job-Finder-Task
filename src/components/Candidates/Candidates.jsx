@@ -7,7 +7,9 @@ import 'swiper/css';
 import './candidates.css'
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination]);
 
 class Candidates extends Component {
     componentDidMount() {
@@ -17,45 +19,61 @@ class Candidates extends Component {
     render() {
 
         const candidatePosts = this.props.candidates.map(candidate => (
-
             <SwiperSlide key={candidate.id}>
-                <img alt={candidate.name} src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg" />
                 {/* Candidates API is broken (All avatar links are broken) */}
                 {/* <img alt={candidate.name} src={candidate.avatar} /> */}
+
+
+                <div className="slide-content">
+                    <img alt={candidate.name} src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg" />
+                    <h1>{candidate.name}</h1>
+                    <span>{candidate.title}</span>
+                </div>
             </SwiperSlide>
         ))
         return (
-
             <div className="candidates">
                 <div className="candidates-header">
-                    <span className="candidates-find">
-                        find top talents
-                    </span>
-                    <h1 className="candidates-title">
+                    <p>
+                        Find top talents
+                    </p>
+                    <h1 className="text-capitalize text-light">
                         Explore Our Latest Candidates
                     </h1>
-                    <span className="hr"></span>
-                    <p className="candidates-desc">
-                        Work wityh someone perfect for your team & get
+                    <hr style={{ color: "#000", width: "50px", height: "2px", opacity: 1 }} />
+                    <p className="candidates-desc w-50">
+                        Work with someone perfect for your team & get
                         amazing results working with the best employees .
                         hire talents with confidence
                     </p>
                 </div>
                 <div className="candidates-carousel">
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={6}
                         spaceBetween={20}
                         pagination={true}
                         navigation={true}
+                        loop={false}
                         modules={[Pagination, Navigation]}
-                        className="mySwiper"
+                        className="candidates-slider"
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            800: {
+                                slidesPerView: 2,
+                            },
+                            1200: {
+                                slidesPerView: 6,
+                            },
+                        }}
                     >
                         {candidatePosts}
                     </Swiper>
 
                 </div>
                 <div className="explore-all">
-                    <button className='btn btn-primary'>explore all</button>
+                    <button className='btn btn-primary exp-all'>explore all</button>
                 </div>
             </div>
         )

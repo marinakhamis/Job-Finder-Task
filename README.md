@@ -9,3 +9,13 @@ Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remot
 ```
 
 That's coming from googleMapsAPI because you're probably using AdBlock extension on your browser, disabling it should solve the problem
+
+- Functionality:
+  - State management for APIs using redux
+  - DOM Manipulation using functional/ class components (using state and props)
+  - Problem solving: Converting ISODate format coming from the API to "number" days ago
+
+    ```
+    Time coming from API: "2022-04-09T00:03:49.583Z":
+    Converted to: 35 days ago
+    ```

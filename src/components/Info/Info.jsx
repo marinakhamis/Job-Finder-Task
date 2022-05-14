@@ -61,8 +61,8 @@ const Info = () => {
             {/*Start: Open posisions container */}
             <div className='open-positions'>
                 {infoData.map(info => (
-                    <>
-                        <div key={info.id} className='info d-flex flex-row border p-3 m-0'>
+                    <div className='border' key={info.id}>
+                        <div className='info d-flex flex-row  p-3 m-0'>
                             <div className="icon">
                                 <i className={info.icon}></i>
                             </div>
@@ -71,7 +71,7 @@ const Info = () => {
                                 <p> {info.openPos} open posisions </p>
                             </div>
                         </div>
-                    </>
+                    </div>
                 ))
                 }
             </div>

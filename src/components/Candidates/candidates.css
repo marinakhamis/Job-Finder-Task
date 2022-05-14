@@ -1,80 +1,28 @@
-/* .candidates-ctr {
-    background-color: #4f52d3;
-    color: #fff;
-    text-align: center;
-    height: 50vh;
-    position: relative;
-
-}
-
-.candidates-header {
-    height: 40%;
-}
-
 .candidates {
-    position: absolute;
-    height: 500px;
-    top: 60%;
-    left: 50%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(50%);
-
-}
- */
-
-
-.Candidates {
-    width: 100%;
-    height: 700px;
-    position: relative;
-}
-
-.candidates-header {
-    position: relative;
-    background-color: #4f52d3;
     width: 100%;
     height: 400px;
+    position: relative;
+}
+
+.candidates-header {
+    background-color: #4f52d3;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
-}
-
-.candidates-find,
-.candidates-title,
-.candidates-desc {
-    color: #fff;
-    padding-bottom: 10px;
-}
-
-.candidates-find {
-    text-transform: uppercase;
-}
-
-.candidates-title {
-    color: #fff;
-}
-
-.hr {
-    width: 25px;
-    height: 2px;
-    background-color: black;
-    margin-bottom: 10px;
-}
-
-.candidates-desc {
-    width: 50%;
-    color: #fff;
     text-align: center;
-    font-weight: 300;
+    height: 100%;
+    color: #fff;
 }
+.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.candidates-slider {
 
+    width: 100%;
+}
 /* candidates-carousel */
 .candidates-carousel {
     position: relative;
     top: -140px;
-    width: 80%;
+    width: 90%;
     height: 300px;
     margin: auto;
     padding: 20px 0px;
@@ -85,6 +33,9 @@
     overflow: none !important;
 }
 
+.candidates .swiper {
+    width: 100%;
+}
 .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -120,14 +71,11 @@
 .candidates-carousel .swiper-button-next,
 .candidates-carousel .swiper-button-prev {
     position: absolute;
-    z-index: 1000;
     top: 38%;
     width: 30px;
     height: 30px;
     line-height: 30px;
     text-align: center;
-    background-color: #4f52d3;
-    border-radius: 50%;
 }
 
 .candidates-carousel .swiper-button-next:after,
@@ -145,17 +93,17 @@
     left: 0px;
 }
 
-.explore-all {
+.exp-all {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     top: -100px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
-.explore-all a {
-    background-color: black;
+.exp-all {
+    background-color: rgb(23, 23, 23);
     border: 1px solid #000;
     border-radius: 2px;
     color: #fff;
@@ -165,12 +113,13 @@
     font-size: 15px;
     width: 150px;
     height: 40px;
+    padding: 20px;
     line-height: 40px;
     text-align: center;
     transition: all .4s ease-in-out;
 }
 
-.explore-all a:hover {
+.exp-all:hover {
     color: black;
     background-color: #fff;
     border: 1px solid #000;
@@ -203,7 +152,8 @@
     font-size: 15px;
 }
 
-@media screen and (max-width:767px) {
+
+@media screen and (max-width:900px) {
     .candidates-carousel {
         height: 320px;
     }
