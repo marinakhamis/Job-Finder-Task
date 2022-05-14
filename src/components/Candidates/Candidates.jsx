@@ -8,7 +8,7 @@ import './candidates.css'
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-
+import notFound from '../../assets/not-found.png'
 SwiperCore.use([Navigation, Pagination]);
 
 class Candidates extends Component {
@@ -25,7 +25,8 @@ class Candidates extends Component {
 
 
                 <div className="slide-content">
-                    <img alt={candidate.name} src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg" />
+                    <img alt={candidate.name}
+                        src={candidate.avatar === null ? candidate.avatar : notFound} />
                     <h1>{candidate.name}</h1>
                     <span>{candidate.title}</span>
                 </div>
