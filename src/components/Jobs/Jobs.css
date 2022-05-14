@@ -65,6 +65,23 @@
     grid-area: 1/2/2/3;
 }
 
+.load-more-btn {
+    background-color: #f7f7f9;
+    color: #000;
+    transition: all 0.5 ease-out;
+}
+
+.load-more-btn:hover {
+    background-color: #4f52d3;
+    color: #fff;
+}
+
+.load-more-ctr {
+    border: 1px solid #eceeef;
+    border-top: none;
+
+}
+
 @media screen and (max-width: 1250px) {
 
     .jobs {

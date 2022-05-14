@@ -3,7 +3,29 @@
     grid-template-columns: 2fr 1fr 1fr 1fr 0.5fr;
     gap: 10px;
     font-size: 0.9rem;
-    
+
+}
+
+.job-info-ctr .fa-solid,
+.job-info-ctr .fa-regular{
+    color: #909091;
 }
 
 .job-info {}
+
+.text-right {
+    text-align: right;
+}
+
+.text-right>.fa-ellipsis {
+    color: #000;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.text-right>.fa-ellipsis:hover {
+    border-radius: 50%;
+    color: #4f52d3;
+    background-size: 200%;
+    cursor: pointer;
+}

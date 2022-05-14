@@ -9,7 +9,6 @@ import './Jobs.css'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import SearchTogglers from '../SearchToggles/SearchTogglers';
-import convertDate from '../../helpers/dateConverter';
 
 class Jobs extends Component {
     constructor(props) {
@@ -56,8 +55,8 @@ class Jobs extends Component {
                 <div className='jobs'>
                     <div className='ptn-jobs'>
                         <div className='d-flex justify-content-between'>
-                            <p className='fw-bold'> We have <span className='purple-text fw-bold'> {this.props.jobs.length} </span> Potential Jobs for you.</p>
-                            <p>Sort by <span className='purple-text'>price</span> </p>
+                            <p className='fw-bold text-primary'> We have <span className='purple-text fw-bold'> {this.props.jobs.length} </span> Potential Jobs for you.</p>
+                            <p>Sort by <span className='fw-bold text-primary'>Newest  <i className="fa-solid fa-angle-down"></i></span> &nbsp; <span style={{ color: "rgb(255, 135, 0)", fontWeight: 800 }}> RSS  <i className="fa-solid fa-rss"></i>  </span> </p>
                         </div>
                         <Tabs>
                             <div className='jobs-tabs-ctr ps-3'>
@@ -72,9 +71,9 @@ class Jobs extends Component {
                             </div>
                             <TabPanel>
                                 {jobPosts}
-                                <div className='border-secondary text-center mx-center py-3'>
+                                <div className='text-center mx-center p-3 load-more-ctr'>
                                     {this.state.visible < this.props.jobs.length &&
-                                        <button onClick={this.loadMore} type="button" className="load-more btn btn-outline-secondary">Load more listings</button>
+                                        <button onClick={this.loadMore} type="button" className="load-more-btn btn w-100">Load more listings</button>
                                     }
                                 </div>
                             </TabPanel>
