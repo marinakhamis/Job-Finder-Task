@@ -13,21 +13,21 @@ const JobCell = (props) => {
                         <h5 style={{ letterSpacing: "1px" }} className='text-capitalize bold-font' > {props.jobtitle} </h5>
                         <span className='purple-text font-weight-bold'>
                             {props.companyName}</span>
-                        <span> {props.jobType}</span>
+                        <span> | {props.jobType}</span>
                     </div>
                 </div>
 
-                <div>
+                <div className='job-cell-lock'>
                     <p> <i className="fa-solid fa-location-dot"></i> {props.jobType}</p>
                 </div>
 
-                <div>
+                <div className='.job-cell-time'>
                     <p> <i className="fa-regular fa-clock"></i>  {convertDate(`${props.createdAt}`)} days ago</p>
                 </div>
-                <div className='d-flex'>
+                <div className='d-flex job-type'>
                     <p> {props.jobType}</p>
                 </div>
-                <div>
+                <div className='job-cell-menu'>
                     <p className='text-right'><i className="fa-solid fa-ellipsis"></i> </p>
                 </div>
             </div>

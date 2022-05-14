@@ -16,7 +16,7 @@ class Jobs extends Component {
         this.state = {
             showMore: false,
             key: "alljobs",
-            visible: 3
+            visible: 4
         }
         this.loadMore = this.loadMore.bind(this);
 
@@ -71,13 +71,12 @@ class Jobs extends Component {
                             </div>
                             <TabPanel>
                                 {jobPosts}
-                                <div className='text-center mx-center p-3 load-more-ctr'>
-                                    {this.state.visible < this.props.jobs.length &&
-                                        <button onClick={this.loadMore} type="button" className="load-more-btn btn w-100">Load more listings</button>
-                                    }
-                                </div>
                             </TabPanel>
-
+                            <div className='text-center mx-center p-3 load-more-ctr'>
+                                {this.state.visible < this.props.jobs.length &&
+                                    <button onClick={this.loadMore} type="button" className="load-more-btn btn w-100">Load more listings</button>
+                                }
+                            </div>
 
                             <TabPanel>
                                 <p>No Available Jobs now </p>
