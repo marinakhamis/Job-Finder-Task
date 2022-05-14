@@ -132,7 +132,7 @@
 
 
 /*Jobs slider */
-.swiper {
+.feat-jobs-slider .swiper {
     position: relative;
     width: 400px !important;
 }

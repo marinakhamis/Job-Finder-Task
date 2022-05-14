@@ -8,7 +8,7 @@ import './candidates.css'
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-import notFound from '../../assets/not-found.png'
+import notFound from '../../assets/not-found.jpg'
 SwiperCore.use([Navigation, Pagination]);
 
 class Candidates extends Component {

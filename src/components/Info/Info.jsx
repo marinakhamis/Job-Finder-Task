@@ -83,14 +83,14 @@ const Info = () => {
                 <div className='bg-primary text-light subscribe-ctr'>
                     <Form>
                         <Form.Group>
-                            <div className='d-flex border-bottom'>
+                            <div className='d-flex border-bottom '>
                                 <span className='border-end p-3'>
-                                    <i className="fa-solid fa-paper-plane p-2"></i>
+                                    <i className="fa-solid fa-paper-plane "></i>
                                 </span>
                                 <span className='p-3 text-light'> Subscribe Our News </span>
                             </div>
 
-                            <div className='p-2'>
+                            <div className='border-end p-3'>
                                 <div className='p-3 pb-0 m-0'>
                                     <p className='m-0'>
                                         Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
