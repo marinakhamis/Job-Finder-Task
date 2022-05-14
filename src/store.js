@@ -13,7 +13,7 @@ const store = createStore(
     compose(
         applyMiddleware(...middleWare),
         // Implementing Redux Devtools (browser extension)
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+        // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     )
 )
 

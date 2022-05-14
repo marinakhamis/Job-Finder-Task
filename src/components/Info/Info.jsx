@@ -1,6 +1,6 @@
 import React from 'react'
 import './info.css'
-import { Form, Button } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -57,140 +57,117 @@ const Info = () => {
         },
     ]
     return (
-        <div className='subscribe-ctr container'>
-            <div className='row mb-3'>
-                {/*Start: Open posisions container */}
-                <div className='col-lg-8 p-3 m-0'>
-                    <div className='row'>
-                        <div className='open-positions border'>
-                            {infoData.map(info => (
-                                <>
-                                    <div className='info d-flex flex-row border p-3 m-0'>
-                                        <div className="icon">
-                                            <i className={info.icon}></i>
-                                        </div>
-                                        <div className='details d-flex flex-column'>
-                                            <h6> {info.name} </h6>
-                                            <p> {info.openPos} open posisions </p>
-                                        </div>
-                                    </div>
-                                </>
-                            ))
-                            }
+        <div className='info-ctr container'>
+            {/*Start: Open posisions container */}
+            <div className='open-positions'>
+                {infoData.map(info => (
+                    <>
+                        <div className='info d-flex flex-row border p-3 m-0'>
+                            <div className="icon">
+                                <i className={info.icon}></i>
+                            </div>
+                            <div className='details d-flex flex-column'>
+                                <h6> {info.name} </h6>
+                                <p> {info.openPos} open posisions </p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div className='row contact-us p-3'>
-                        <div className='col-lg-4 bg-primary text-light subscribe-ctr'>
-
-                            <Form>
-                                <Form.Group className="mb-3">
-                                    <div className='d-flex border-bottom'>
-                                        <span className='border-end p-3'>
-                                            <i className="fa-solid fa-paper-plane p-2"></i>
-                                        </span>
-                                        <span className='p-3 text-light'> Subscribe Our News </span>
-                                    </div>
-
-                                    <div className='p-2'>
-                                        <div className='p-3 pb-0 m-0'>
-                                            <p className='m-0'>
-                                                Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
-                                            </p>
-                                        </div>
-                                        <div className="email-input p-3">
-                                            <i className="fa-solid fa-envelope email-icon "></i>
-                                            <input type="email" placeholder="Enter Your Email" className='input-field' />
-                                        </div>
-                                    </div>
-
-                                </Form.Group>
-                                <Form.Group className="p-4 form-group w-100 ">
-                                    <Button className='btn btn-primary subs-btn' variant="primary" type="submit">
-                                        Subscribe
-                                    </Button>
-                                </Form.Group>
-                            </Form>
+                    </>
+                ))
+                }
+            </div>
+            {/*End: Open posisions container */}
 
 
+            {/*Start: contact us container */}
+            <div className='contact-us'>
+                <div className='bg-primary text-light subscribe-ctr'>
+                    <Form>
+                        <Form.Group>
+                            <div className='d-flex border-bottom'>
+                                <span className='border-end p-3'>
+                                    <i className="fa-solid fa-paper-plane p-2"></i>
+                                </span>
+                                <span className='p-3 text-light'> Subscribe Our News </span>
+                            </div>
 
-                        </div>
+                            <div className='p-2'>
+                                <div className='p-3 pb-0 m-0'>
+                                    <p className='m-0'>
+                                        Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
+                                    </p>
+                                </div>
+                                <div className="email-input p-3">
+                                    <i className="fa-solid fa-envelope email-icon "></i>
+                                    <input type="email" placeholder="Enter Your Email" className='input-field' />
+                                </div>
+                            </div>
 
-
-                        <div className='col-lg-4 bg-primary text-light subscribe-ctr'>
-
-                            <Form>
-                                <Form.Group className="mb-3">
-                                    <div className='d-flex border-bottom'>
-                                        <span className='border-end p-3'>
-                                            <i className="fa-solid fa-paper-plane p-2"></i>
-                                        </span>
-                                        <span className='p-3 text-light'> Subscribe Our News </span>
-                                    </div>
-
-                                    <div className='p-2'>
-                                        <div className='p-3 pb-0 m-0'>
-                                            <p className='m-0'>
-                                                Subscribe to our newsletter to get the latest jobs posted, candidates and latest news.
-                                            </p>
-                                        </div>
-                                        <div className="email-input p-3">
-                                            <i className="fa-solid fa-envelope email-icon "></i>
-                                            <input type="email" placeholder="Enter Your Email" className='input-field' />
-                                        </div>
-                                    </div>
-
-                                </Form.Group>
-                                <Form.Group className="p-4 form-group w-100 ">
-                                    <p> 8 hours ago</p>
-                                </Form.Group>
-                            </Form>
-
-
-
-                        </div>
-
-                    </div>
+                        </Form.Group>
+                        <Form.Group className="p-4 form-group w-100 ">
+                            <button className='btn btn-primary subs-btn' variant="primary" type="submit">
+                                Subscribe
+                            </button>
+                        </Form.Group>
+                    </Form>
                 </div>
+
                 {/* End: Open posisions container */}
+                <div className='twtr-ctr'>
+                    <Form>
+                        <Form.Group>
+                            <div className='d-flex border-bottom'>
+                                <span className='border-end p-3'>
+                                    <i className="fa-brands fa-twitter"></i>
+                                </span>
+                                <span className='p-3 text-light'> Latest tweets </span>
+                            </div>
 
+                            <div className='p-2'>
+                                <div className='p-3 pb-0 m-0'>
+                                    <p className='m-0'>
+                                        <span className='bg-primary px-2'>  @tielabs</span>                                     </p>
+                                    <p className='m-0'>
+                                        We have released a major update for instaNOW plugin (formaly instagramy)
+                                        v2.0 http/www.insta-now
+                                    </p>
+                                </div>
+                            </div>
 
-                {/*Start slider */}
-
-                <div className='col-lg-4'>
-                    <h2 className='text-primary fw-bold'> Featured Jobs</h2>
-                    <div className='border-secondary'>
-
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={0}
-                            slidesPerGroup={1}
-                            navigation={true}
-                            modules={[Navigation]}
-                            className="mySwiper"
-                        >
-                            <SwiperSlide>
-                                {/* 
-                                If I had more time I would've added props 
-                                to the component to display different jobs 
-                                just like i did in the positions part
-                             */}
-                                <JobSlideContent />
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <JobSlideContent />
-                            </SwiperSlide>
-
-                        </Swiper>
-
-                    </div>
+                        </Form.Group>
+                        <Form.Group className="p-4">
+                            <p><i className="fa-solid fa-clock-rotate-left"></i>  8 hours ago</p>
+                        </Form.Group>
+                    </Form>
 
                 </div>
-
-                {/*End slider */}
             </div>
 
+            {/*Start slider */}
+            <div className='feat-jobs-slider'>
+                <h2 className='text-primary fw-bold'> Featured Jobs</h2>
+                <div className='border-secondary'>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={0}
+                        slidesPerGroup={1}
+                        navigation={true}
+                        modules={[Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <JobSlideContent />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <JobSlideContent />
+                        </SwiperSlide>
 
+                    </Swiper>
+
+                </div>
+
+            </div>
+
+            {/*End slider */}
         </div>
     )
 }
