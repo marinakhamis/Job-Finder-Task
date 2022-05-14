@@ -1,4 +1,4 @@
-# IDSC TASK - by Marina Khamis
+# IDSC TASK
 
 - Using React version "^18.1.0"
 
