@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Job-Finder-Task/static/css/main.077a4d31.css",
+    "main.js": "/Job-Finder-Task/static/js/main.def4a33e.js",
+    "static/media/building.webp": "/Job-Finder-Task/static/media/building.dfa5cf3bb76671fb5a68.webp",
+    "static/media/frontend-job.webp": "/Job-Finder-Task/static/media/frontend-job.0a06d6888b39dc713097.webp",
+    "static/media/tie.webp": "/Job-Finder-Task/static/media/tie.eacff568458719b9f189.webp",
+    "static/media/not-found.jpg": "/Job-Finder-Task/static/media/not-found.bb04a6a8680565c6723d.jpg",
+    "index.html": "/Job-Finder-Task/index.html",
+    "main.077a4d31.css.map": "/Job-Finder-Task/static/css/main.077a4d31.css.map",
+    "main.def4a33e.js.map": "/Job-Finder-Task/static/js/main.def4a33e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.077a4d31.css",
+    "static/js/main.def4a33e.js"
+  ]
+}
